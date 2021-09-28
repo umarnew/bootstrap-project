@@ -57,9 +57,9 @@
 
         svg {
             margin-left: 12px;
-            margin-right: 10px;
+            margin-right: 5px;
             float: left;
-            margin-top: 5px;
+            margin-top: 0px;
         }
 
         .headingRow {
@@ -81,181 +81,340 @@
             margin-bottom: 15px;
             padding-top: 10px;
         }
+
+        .myCollapsMenu {
+            margin-left: 20px;
+        }
     </style>
 
 
 </head>
 
 <body>
+
+
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                <circle cx="12" cy="13" r="4"></circle>
+    <nav class="navbar navbar-light ">
+
+        <div class="col-sm-8">
+            <a style="float: left;" href="#" class="navbar-brand d-flex align-items-center">
+                <svg style="float: left;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mr-2">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                    </path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                </svg>
+
+            </a>
+
+
+            <span class="navbar-toggler-icon" type="button" style="margin-right: 10px; float: left;"></span>
+            <input style="    margin-right: 510px;    width: 30%;         border-radius: 10px;"
+                class="form-control mr-sm-2" type="search" placeholder=" Search" aria-label="Search">
+        </div>
+
+        <div class="col-sm-4">
+            <img style=" margin-right: 10px;  float: right; border-radius: 220px;
+            width: 4.5%;" src="download.jpg" alt="">
+            <svg style="float: right; margin-right: 10px; " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
             </svg>
 
-        </a>
-        <a class="navbar-brand" href="#">Dashboard</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Calender</a>
-                </li>
-
-            </ul>
-
         </div>
+
     </nav>
 
     <div>
-        <input style="    margin-right: 510px;    width: 30%; float: right;        border-radius: 10px;"
-            class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+        <div style=" ">
+
+            <input style="       width: 28%;
+            float: right;
+            border-radius: 10px;
+            /* float: left; */
+            margin-right: 50%;
+            height: 10%;" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 
 
-        <table class="table">
-            <thead>
-                <tr style="background-color: rgb(211, 211, 211);">
-                    <th scope="col">Name</th>
-                    <th scope="col">Position</th>
-                    <th scope="col">Country</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Edit</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            <p>albert</p>
-                        </svg></th>
-                    <td> Worker</td>
-                    <td> Pakistan</td>
-                    <td>Status</td>
-                    <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Edit Info</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            <p>albert</p>
-                        </svg></th>
-                    <td> Worker</td>
-                    <td> Pakistan</td>
-                    <td>Status</td>
-                    <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Edit Info</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            <p>albert</p>
-                        </svg></th>
-                    <td> Worker</td>
-                    <td> Pakistan</td>
-                    <td>Status</td>
-                    <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Edit Info</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+            <table class="table">
+                <thead>
+                    <tr style="background-color: rgb(211, 211, 211);">
+                        <th scope="col">Name</th>
+                        <th scope="col">Position</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
 
-        <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
-            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                <svg class="bi me-2" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-5 fw-semibold">Collapsible</span>
-            </a>
-            <ul class="list-unstyled ps-0">
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#home-collapse" aria-expanded="true">
-                        Home
-                    </button>
-                    <div class="collapse show" id="home-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">Overview</a></li>
-                            <li><a href="#" class="link-dark rounded">Updates</a></li>
-                            <li><a href="#" class="link-dark rounded">Reports</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#dashboard-collapse" aria-expanded="false">
-                        Dashboard
-                    </button>
-                    <div class="collapse" id="dashboard-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">Overview</a></li>
-                            <li><a href="#" class="link-dark rounded">Weekly</a></li>
-                            <li><a href="#" class="link-dark rounded">Monthly</a></li>
-                            <li><a href="#" class="link-dark rounded">Annually</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#orders-collapse" aria-expanded="false">
-                        Orders
-                    </button>
-                    <div class="collapse" id="orders-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">New</a></li>
-                            <li><a href="#" class="link-dark rounded">Processed</a></li>
-                            <li><a href="#" class="link-dark rounded">Shipped</a></li>
-                            <li><a href="#" class="link-dark rounded">Returned</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="border-top my-3"></li>
-                <li class="mb-1">
-                    <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-                        data-bs-target="#account-collapse" aria-expanded="false">
-                        Account
-                    </button>
-                    <div class="collapse" id="account-collapse">
-                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                            <li><a href="#" class="link-dark rounded">New...</a></li>
-                            <li><a href="#" class="link-dark rounded">Profile</a></li>
-                            <li><a href="#" class="link-dark rounded">Settings</a></li>
-                            <li><a href="#" class="link-dark rounded">Sign out</a></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <img style="    border-radius: 220px;
+                            width: 10%;
+                            padding-bottom: 3px;
+                            margin-right: 10px;
+                            margin-left: 10px;
+                        " src="download.jpg" alt=""> Albert
+                            </label>
+
+                        </th>
+                        <td> Worker</td>
+                        <td> Pakistan</td>
+                        <td>Status</td>
+                        <td> <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Edit Info</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+        <ul class="list-unstyled ps-0" style="    padding-top: 50px; width: 20%;">
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+                    data-bs-target="#home-collapse" aria-expanded="true">
+                    Home
+                </button>
+                <div class="collapse show myCollapsMenu" id="home-collapse" style="">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Updates</a></li>
+                        <li><a href="#" class="link-dark rounded">Reports</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard-collapse" aria-expanded="false">
+                    Dashboard
+                </button>
+                <div class="collapse myCollapsMenu" id="dashboard-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">Overview</a></li>
+                        <li><a href="#" class="link-dark rounded">Weekly</a></li>
+                        <li><a href="#" class="link-dark rounded">Monthly</a></li>
+                        <li><a href="#" class="link-dark rounded">Annually</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#orders-collapse" aria-expanded="false">
+                    Orders
+                </button>
+                <div class="collapse myCollapsMenu" id="orders-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New</a></li>
+                        <li><a href="#" class="link-dark rounded">Processed</a></li>
+                        <li><a href="#" class="link-dark rounded">Shipped</a></li>
+                        <li><a href="#" class="link-dark rounded">Returned</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="border-top my-3"></li>
+            <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#account-collapse" aria-expanded="false">
+                    Account
+                </button>
+                <div class="collapse" id="account-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                        <li><a href="#" class="link-dark rounded">New...</a></li>
+                        <li><a href="#" class="link-dark rounded">Profile</a></li>
+                        <li><a href="#" class="link-dark rounded">Settings</a></li>
+                        <li><a href="#" class="link-dark rounded">Sign out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
-        </button>
+
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
